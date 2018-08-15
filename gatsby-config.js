@@ -1,4 +1,5 @@
 module.exports = {
+  prefixpath: '/agidevelopment_com_web',
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
