@@ -1,8 +1,8 @@
 {
   "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "AgI Development",
+  "version": "0.9.0",
+  "author": "Daniel Dosen <daniel.dosen@agidevelopment.com>",
   "dependencies": {
     "babel-plugin-tailwind": "^0.1.10",
     "emotion": "^9.2.8",
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/dgdosen/agidevelopment_com_web.git"
   }
 }
