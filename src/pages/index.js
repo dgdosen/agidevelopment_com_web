@@ -1,12 +1,17 @@
+/* global tw */
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
+import styled from 'react-emotion';
+
+const Heading = styled('h1')`
+  ${tw('my-0 text-xl leading-tight')};
+  `;
 
 const IndexPage = () => (
-  <div>
-    <h1>Cloud-based Progressive Application Development</h1>
-
+  <Layout>
+    <Heading>Cloud-based Progressive Application Development</Heading>
     <Link to="/page-2/">Go to page 2</Link>
-  </div>
+  </Layout>
 )
 
 export default IndexPage
