@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'react-emotion';
 
+import Layout from '../components/layout'
+
 const Heading = styled('h1')`
   ${tw('my-0 text-xl leading-tight')};
   `;
