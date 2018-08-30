@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import styled from 'react-emotion';
 
 const NavBar = styled('header')`
-  ${tw('font-sans align-middle bg-green-darker text-white py-6')};
+  ${tw('font-sans align-middle bg-blue-darker text-white py-6')};
 `;
 
 const Container = styled('div')`
