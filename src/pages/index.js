@@ -13,6 +13,8 @@ const IndexPage = () => (
   <Layout>
     <Heading>Cloud-based Progressive Application Development</Heading>
     <Link to="/page-2/">test link to other page...</Link>
+    <p></p>
+    Agile in Context
   </Layout>
 )
 
