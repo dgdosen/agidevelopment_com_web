@@ -8,7 +8,7 @@ const NavBar = styled('header')`
 `;
 
 const Container = styled('div')`
-  ${tw('container flex align-middle items-center justify-between mx-auto px-4')};
+  ${tw('container max-w-2xl mx-auto flex align-middle items-center justify-between px-4')};
 `;
 
 const HeaderList = styled('ul')`
@@ -37,12 +37,17 @@ const Header = ({ siteTitle }) => (
         <h1><HeaderLink href="/">{siteTitle}</HeaderLink></h1>
         <HeaderList>
           <HeaderItem>
-            <HeaderLink href="about/">
+            <HeaderLink href="/about/">
               About
             </HeaderLink>
           </HeaderItem>
           <HeaderItem>
-            <HeaderLink href="contact/">
+            <HeaderLink href="/blog/">
+              Blog
+            </HeaderLink>
+          </HeaderItem>
+          <HeaderItem>
+            <HeaderLink href="/contact/">
               Contact
             </HeaderLink>
           </HeaderItem>
