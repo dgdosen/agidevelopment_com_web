@@ -1,5 +1,29 @@
+/* global tw */
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'react-emotion';
+
+const NavBar = styled('header')`
+  ${tw('font-sans align-middle bg-green-darker text-white py-6')};
+`;
+
+const Container = styled('div')`
+  ${tw('container flex align-middle items-center justify-between mx-auto px-4')};
+`;
+
+const HeaderList = styled('ul')`
+  ${tw('flex align-middle items-center list-reset text-xl')};
+`;
+
+const HeaderItem = styled('li')`
+  ${tw('align-middle ml-4')};
+`;
+
+
+const HeaderLink = styled('a')`
+  ${tw('font-sans align-middle no-underline text-white hover:text-gray-darker')};
+`;
+
 
 const Header = ({ siteTitle }) => (
   <div
@@ -8,25 +32,23 @@ const Header = ({ siteTitle }) => (
       marginBottom: '1.45rem',
     }}
   >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+    <NavBar>
+      <Container>
+        <h1><HeaderLink href="/">{siteTitle}</HeaderLink></h1>
+        <HeaderList>
+          <HeaderItem>
+            <HeaderLink href="about/">
+              About
+            </HeaderLink>
+          </HeaderItem>
+          <HeaderItem>
+            <HeaderLink href="contact/">
+              Contact
+            </HeaderLink>
+          </HeaderItem>
+        </HeaderList>
+      </Container>
+    </NavBar>
   </div>
 )
 
