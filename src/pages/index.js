@@ -12,7 +12,7 @@ const Heading = styled('h1')`
 const IndexPage = () => (
   <Layout>
     <Heading>Cloud-based Progressive Application Development</Heading>
-    <Link to="/page-2/">test link</Link>
+    <Link to="/page-2/">test link to other page...</Link>
   </Layout>
 )
 
